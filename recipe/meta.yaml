@@ -1,7 +1,6 @@
 {% set version = '1.4.2' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-networktoolbox
@@ -14,8 +13,7 @@ source:
   sha256: c70fab7c5d7f77d2801ab8783ef1da1b3a5abc88f869fdfea555f7a0eb8fcf08
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
